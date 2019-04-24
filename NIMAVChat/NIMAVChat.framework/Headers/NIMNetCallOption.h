@@ -162,6 +162,11 @@ typedef NSUInteger(^NIMNetCallAudioSamplesHandler)(SInt16 *audioSamples, NSUInte
 @property (nonatomic, assign)   BOOL           serverRecordVideo;
 
 /**
+ *  启用多人音视频录制时同时对每路用户单独录制，只有多人音视频可以设置，只在 "服务器录制音频开关" 或者 "服务器录制视频开关" 开启时有效，否则加入房间会失败
+ */
+@property (nonatomic, assign) BOOL             serverRecordSingleUser;
+
+/**
  *  扩展消息
  *  @discussion 仅在主叫发起点对点通话时设置有效，用于在主被叫之间传递额外信息，被叫收到呼叫时会携带该信息
  */

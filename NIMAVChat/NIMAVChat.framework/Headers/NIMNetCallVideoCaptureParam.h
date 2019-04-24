@@ -88,6 +88,11 @@ typedef void(^NIMNetCallVideoSampleBufferHandler)(CMSampleBufferRef sampleBuffer
 @property (nonatomic, assign) BOOL isCodeMirror;
 
 /**
+*  高视频预览质量，默认为 NO, 打开后将提供高质量的本地视频预览，在较老的机器上可能会影响性能
+*/
+@property (nonatomic, assign) BOOL highPreviewQuality;
+
+/**
  * 视频前处理参数，如需开启前处理请指定该参数，不指定将不开启前处理。
  
  @discussion 如果需要在通话开始时就已添加美颜，水印等前处理，请指定该参数中对应的参数。

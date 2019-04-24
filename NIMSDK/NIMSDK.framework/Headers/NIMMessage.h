@@ -142,7 +142,7 @@ typedef NS_ENUM(NSInteger, NIMMessageAttachmentDownloadState){
 
 /**
  *  服务器扩展
- *  @discussion 客户端可以设置这个字段,这个字段将在本地存储且发送至对端,上层需要保证 NSDictionary 可以转换为 JSON，长度限制 4K
+ *  @discussion 客户端可以设置这个字段,这个字段将在本地存储且发送至对端,上层需要保证 NSDictionary 可以转换为 JSON，长度限制 1K
  */
 @property (nullable,nonatomic,copy)                NSDictionary    *remoteExt;
 

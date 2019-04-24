@@ -226,7 +226,7 @@ typedef NS_ENUM(NSInteger, NIMRTSStatus){
  */
 - (BOOL)sendRTSData:(NSData *)data
                from:(NSString *)sessionID
-                 to:(NSString *)userID
+                 to:(nullable NSString *)userID
                with:(NIMRTSService)service API_UNAVAILABLE(macos);
 
 /**
